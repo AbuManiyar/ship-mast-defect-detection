@@ -119,13 +119,3 @@ The goal is not classification directly, but learning **distance between images*
 * Build a small inference demo (web app)
 
 ---
-
-## 🙌 Final Note
-
-This is a practical attempt to combine:
-
-* generative models
-* computer vision
-* similarity learning
-
-Not a perfect pipeline, but a working approach that can be improved further.
