@@ -23,7 +23,7 @@ Instead of a standard classifier, the model learns to compare two images and dec
 
 ---
 
-## 📂 Dataset Preparation (What was actually done)
+## Dataset Preparation (What was actually done)
 
 The dataset wasn’t just generated and used directly — some practical steps were involved:
 
@@ -41,7 +41,7 @@ So there is a **human-in-the-loop cleaning step** to keep the dataset reasonably
 
 ---
 
-## 🔁 Pair Creation (Siamese Learning)
+## Pair Creation (Siamese Learning)
 
 The model is trained on image pairs:
 
@@ -57,7 +57,7 @@ This helps the network learn a feature space where similar conditions are closer
 
 ---
 
-## 🧠 Model Details
+## Model Details
 
 * Backbone: **ResNet50 (pretrained)**
 * Siamese architecture (shared weights)
@@ -67,7 +67,7 @@ The goal is not classification directly, but learning **distance between images*
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * PyTorch
 * Diffusers (Stable Diffusion)
@@ -77,14 +77,14 @@ The goal is not classification directly, but learning **distance between images*
 
 ---
 
-## 📁 Files
+## Files
 
 * `ship_mast_dataset_colab.ipynb` → Dataset generation
 * `ShipMast_Siamese_ResNet50.ipynb` → Model training
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 1. Dataset Generation
 
@@ -99,7 +99,7 @@ The goal is not classification directly, but learning **distance between images*
 
 ---
 
-## ⚠️ Notes
+## Note!
 
 * This dataset is **synthetically generated and manually curated**
 * Model performance depends heavily on:
@@ -111,18 +111,12 @@ The goal is not classification directly, but learning **distance between images*
 
 ---
 
-## 📈 Possible Improvements
+## Possible Improvements
 
 * Add real-world ship mast data for validation
 * Try contrastive / triplet loss tuning
 * Improve prompt diversity for better generalization
 * Build a small inference demo (web app)
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
 
 ---
 
